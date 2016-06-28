@@ -1,0 +1,71 @@
+/*         index.css        */
+
+html, body{width: 100%; height: 100%; margin: 0 auto; }
+#container{width: 100%; height: 100%; position: fixed; }
+
+#container > section{width: calc(100% / 3); height: 100%; float: left; background-color: #F0F0FF; border-left: 1px solid #d2d2ff; border-right: 1px solid #d2d2ff; box-sizing: border-box; position: relative; z-index: 0; }
+
+#ghibli_header{width: 160px; height: 74px; position: absolute; z-index: 500; left: 40px; top: 40px; }
+
+#ghibli_header > h1{width: 100%; height: 100%; }
+
+#ghibli_header > h1 > a{width: 100%; height: 100%; display: block; background-image: url(../img/logo_min.png); background-repeat: no-repeat; background-position: center center; }
+
+section > .link_img{width: 280px; height: 280px; display: block; border-radius: 50%; background-repeat: no-repeat; position: absolute; z-index: -10; top: 25%; left: 50%; margin-left: -140px; transition: all 0.7s ease-in-out; box-shadow: 0 0 15px #99c;}
+
+a > span{width: 0; height: 0; overflow: hidden; display: block; }
+
+section > .link_img:hover ~ .plus > a > .fa-plus-circle{width: 0; height: 0; overflow: hidden; float: right; }
+
+section > .link_img:hover ~ .plus > a > .fa-arrow-circle-right{width: 100%; height: 100%; font-size: 60px; line-height: 50px; color: #e1e1ff; border-radius: 50%; border-radius: 50%; float: left; transition: all 1s; }
+
+section > .link_img:hover ~ .title_box p{transform: translate3d(50%,0,0); color: #fff; transition: all 0.6s ease-in-out; }
+
+section > .link_img:hover ~ span{margin-left: 50%; background-color: #fff; transition: all 0.6s ease-in-out; }
+
+section > span {width: 2px; height: 50px; background-color: #109ceb; margin-left: 55px; display: block; float: left; margin-top: 100%;}
+section > .plus {width: 50px; height: 50px; margin-right: 50px; float: right; border-radius: 50%; margin-top: 100%;}
+section > .plus > a{width: 100%; height: 100%; display: block; }
+.fa-plus-circle{font-size: 60px; line-height: 50px; color: #e1e1ff; border-radius: 50%; background-color: #109ceb; }
+.fa-arrow-circle-right{width: 0; height: 0; overflow: hidden; }
+section > .plus:hover > a > .fa-plus-circle{width: 0; height: 0; overflow: hidden; float: right; }
+section > .plus:hover > a > .fa-arrow-circle-right{width: 100%; height: 100%; font-size: 60px; line-height: 50px; color: #e1e1ff; border-radius: 50%; background-color: #109ceb; border-radius: 50%; float: left; }
+section > .plus:hover ~ .title_box p{transform: translate3d(50%,0,0); color: #fff; transition: all 0.6s; }
+section > .plus:hover + span{margin-left: 50%; background-color: #fff; transition: all 0.6s; }
+section > .plus:hover + .link_img{width: 100%; height: 100%; border-radius: 0%; left: 0%; margin-left: 0; background-position: center; top: 0;}
+
+section > .title_box{margin-left: 45px; position: absolute; z-index: 500; top: 75%; }
+.title_box > .title {font: bold 2.5rem/1 "Helvetica"; color: #109ceb; }
+.title_box > .subtitle {font: bold 1.5rem/1 "Helvetica"; color: #109ceb; }
+
+#howl {}
+#howl > .link_img{background-image: url(../img/howl/bg_img.jpg); background-size: 250%; background-position: -130px 0px; }
+#howl > .link_img:hover{width: 100%; height: 100%; border-radius: 0%; margin-left: 0; background-position: center; top: 0; left: 0; background-size: cover; display: block; }
+#howl > .design_box {}
+#howl > .design_box > span {}
+#howl > .design_box > .plus {}
+#howl > .title_box {}
+#howl > .title_box > .title {}
+#howl > .title_box > .subtitle {}
+
+#totoro {}
+#totoro > .link_img{background-image: url(../img/totoro/bg_img_3.jpg); background-position: -220px -0px; background-size: 250%; transition: all 0.7s ease-in-out; top: 25%; left: 50%; }
+#totoro > .link_img:hover{width: 100%; height: 100%; border-radius: 0%; margin-left: 0; background-position: center; top: 0; left: 0%; background-size: cover; display: block; }
+#totoro > .design_box {}
+#totoro > .design_box > span {}
+#totoro > .design_box > .plus {}
+#totoro > .title_box {}
+#totoro > .title_box > .title {}
+#totoro > .title_box > .subtitle {}
+
+#sen {}
+#sen > .link_img{background-image: url(../img/sen/bg_img.jpg); background-position: 25% 80%; background-size: 250%; transition: all 0.7s ease-in-out; }
+#sen > .plus:hover ~ .title_box p{transform: translate3d(50%,0,0); color: #e1e1ff;}
+#sen > .link_img:hover ~ .title_box > p{transform: translate3d(50%,0,0); color: #e1e1ff;}
+#sen > .link_img:hover{width: 100%; height: 100%; border-radius: 0%; left: 0; margin-left: 0; background-position: center; top: 0; background-size: cover; display: block;}
+#sen > .design_box {}
+#sen > .design_box > span {}
+#sen > .design_box > .plus {}
+#sen > .title_box {}
+#sen > .title_box > .title {}
+#sen > .title_box > .subtitle {}
